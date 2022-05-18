@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background: 0;
+  border: 0;
+  font-family: 'Space Mono', sans-serif;
+}
+
+body {
+  min-height: 100%;
+  background-color: #141d2f;
+  color: white;
+}
+
+.container{
+  display: flex;
+}
+
+input{
+  color: white;
+  
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | GitHub user search app</title>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div>
+          <h1>devfinder</h1>
+        </div>
+        <div>
+          <button aria-label="Toggle Light Mode">
+            Light
+            <img src="./assets/icon-sun.svg" alt="" />
+          </button>
+        </div>
+      </div>
+      <div>
+        <img src="./assets/icon-search.svg" alt="" />
+        <input
+          class="input-field"
+          type="text"
+          placeholder="Search Github username"
+        />
+        <button class="submit-btn" onclick="getUser()" type="submit">Submit</button>
+      </div>
+      <div>
+        <img src="" alt="" />
+        <h2 class="person_name"></h2>
+        <small class="username"></small>
+        <small class="join_status">Joined</small>
+      </div>
+      <p class="description"></p>
+      <div class="flex">
+        <div>
+          <p>Repos</p>
+        </div>
+        <div>
+          <p class="repo_number"></p>
+        </div>
+        <div>
+          <div>
+            <p>Followers</p>
+          </div>
+          <div>
+            <p class="followers_number"></p>
+          </div>
+        </div>
+        <div>
+          <div>
+            <p>Following</p>
+          </div>
+          <div>
+            <p class="following_number"></p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="./assets/icon-location.svg" alt="">
+        </div>
+        <div>
+          <p class="user_location"></p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="./assets/icon-website.svg" alt="">
+        </div>
+        <div>
+          <p class="user_blog"></p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="./assets/icon-twitter.svg" alt="">
+        </div>
+        <div>
+          <p class="user_twitter"></p>
+        </div>
+      </div>
+      <div>
+        <div>
+          <img src="./assets/icon-company.svg" alt="">
+        </div>
+        <div>
+          <p class="user_company"></p>
+        </div>
+      </div>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
