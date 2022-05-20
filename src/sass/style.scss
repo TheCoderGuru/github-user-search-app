@@ -44,6 +44,46 @@ body {
   &__icon {
     height: 20px;
     width: auto;
-    margin-top: 0.2em;
   }
+}
+
+.input-group {
+  padding: 1em;
+  display: flex;
+  gap: .7em;
+  border-radius: 0.7em;
+  margin: 2em;
+  background-color: #1e2a47;
+
+  &__search {
+    padding: 0.2em;
+    object-fit: contain;
+  }
+
+  &__field::placeholder {
+    color: white;
+    font-size: 0.9rem;
+    vertical-align: middle;
+    opacity: 1;
+    font-family: "Space Mono", sans-serif;
+  }
+
+  &__field {
+    width: 100%;
+    color: white;
+  }
+
+  &__submit-btn {
+    background-color: #0079ff;
+    border-radius: 0.2em;
+    padding: 0.9em;
+    color: white;
+    font-family: "Space Mono", sans-serif;
+  }
+}
+
+input{
+  padding-left: 1em;
+  font-size: .9rem;
+  font-family: 'Space Mono', sans-serif;
 }

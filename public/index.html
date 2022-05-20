@@ -22,7 +22,7 @@
   <body>
     <main>
       <div class="container">
-        <div>
+        <div class="container__title">
           <h1>devfinder</h1>
         </div>
         <div>
@@ -34,14 +34,14 @@
           </div>
         </div>
       </div>
-      <div>
-        <img src="./assets/icon-search.svg" alt="" />
+      <div class="input-group">
+        <img class="input-group__search" src="./assets/icon-search.svg" alt="" />
         <input
-          class="input-field"
+          class="input-group__field"
           type="text"
-          placeholder="Search Github username"
+          placeholder="Search Github username..."
         />
-        <button class="submit-btn" onclick="getUser()" type="submit">Submit</button>
+        <button class="input-group__submit-btn" type="submit">Submit</button>
       </div>
       <div>
         <img src="" alt="" />
