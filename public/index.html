@@ -34,76 +34,87 @@
           </div>
         </div>
       </div>
-      <div class="input-group">
-        <img class="input-group__search" src="./assets/icon-search.svg" alt="" />
-        <input
-          class="input-group__field"
-          type="text"
-          placeholder="Search Github username..."
+      <div class="input__group">
+        <img
+          class="input__group__search"
+          src="./assets/icon-search.svg"
+          alt=""
         />
-        <button class="input-group__submit-btn" type="submit">Submit</button>
+        <input
+          class="input__group__field"
+          type="text"
+          placeholder="Search Github username"
+        />
+        <button
+          class="input__group__submit-btn"
+          onclick="getUser()"
+          type="submit"
+        >
+          Submit
+        </button>
       </div>
-      <div>
-        <img src="" alt="" />
+      <div class="output-container">
+        <div class="user_avatar" src="" alt="" />
         <h2 class="person_name"></h2>
         <small class="username"></small>
         <small class="join_status">Joined</small>
-      </div>
-      <p class="description"></p>
-      <div class="flex">
-        <div>
-          <p>Repos</p>
-        </div>
-        <div>
-          <p class="repo_number"></p>
+
+        <p class="description"></p>
+        <div class="flex">
+          <div>
+            <p>Repos</p>
+          </div>
+          <div>
+            <p class="repo_number"></p>
+          </div>
+          <div>
+            <div>
+              <p>Followers</p>
+            </div>
+            <div>
+              <p class="followers_number"></p>
+            </div>
+          </div>
+          <div>
+            <div>
+              <p>Following</p>
+            </div>
+            <div>
+              <p class="following_number"></p>
+            </div>
+          </div>
         </div>
         <div>
           <div>
-            <p>Followers</p>
+            <img src="./assets/icon-location.svg" alt="" />
           </div>
           <div>
-            <p class="followers_number"></p>
+            <p class="user_location"></p>
           </div>
         </div>
         <div>
           <div>
-            <p>Following</p>
+            <img src="./assets/icon-website.svg" alt="" />
           </div>
           <div>
-            <p class="following_number"></p>
+            <p class="user_blog"></p>
           </div>
         </div>
-      </div>
-      <div>
         <div>
-          <img src="./assets/icon-location.svg" alt="">
+          <div>
+            <img src="./assets/icon-twitter.svg" alt="" />
+          </div>
+          <div>
+            <p class="user_twitter"></p>
+          </div>
         </div>
         <div>
-          <p class="user_location"></p>
-        </div>
-      </div>
-      <div>
-        <div>
-          <img src="./assets/icon-website.svg" alt="">
-        </div>
-        <div>
-          <p class="user_blog"></p>
-        </div>
-      </div>
-      <div>
-        <div>
-          <img src="./assets/icon-twitter.svg" alt="">
-        </div>
-        <div>
-          <p class="user_twitter"></p>
-        </div>
-      </div>
-      <div>
-        <div>
-          <img src="./assets/icon-company.svg" alt="">
-        </div>
-        <div>
-          <p class="user_company"></p>
+          <div>
+            <img src="./assets/icon-company.svg" alt="" />
+          </div>
+          <div>
+            <p class="user_company"></p>
+          </div>
         </div>
       </div>
     </main>

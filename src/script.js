@@ -1,5 +1,5 @@
-let input = document.querySelector(".input-group__field");
-let btn = document.querySelector(".input-group__submit-btn");
+let input = document.querySelector(".input__group__field");
+let btn = document.querySelector(".input__group__submit-btn");
 let username = document.querySelector(".username");
 let submit_btn = document.querySelector(".submit_btn");
 let personName = document.querySelector(".person_name");
@@ -15,25 +15,35 @@ let userBlog = document.querySelector(".user_blog");
 let userTwitter = document.querySelector(".user_twitter");
 let userCompany = document.querySelector(".user_company");
 let userTwitterUsername = document.querySelector(".user_twitter");
-let personAvatar = document.querySelector(".person_avatar");
+let img = document.createElement("img");
+let personAvatar = document.querySelector(".user_avatar");
+
 
 btn.addEventListener("click", () => {
   async function getUser() {
-    let value = input.value;
-    const response = await fetch(`https://api.github.com/users/${value}`);
-    const data = await response.json();
+    let value = input.value;  
+    const response = await fetch(`https://api.github.com/users/${value}`)
+    const data = await response.json()
+    
+    console.log(data.created_at);
+
+    img.src = data.avatar_url;
+    personAvatar.appendChild(img);
+    personAvatar.style.border = "none";
+        
+    const dateData = data.created_at.slice(0, data.created_at.length - 10);
 
     personName.innerHTML = data.name;
     username.innerHTML = data.login;
-    joinStatus.innerHTML = data.created_at;
+    joinStatus.innerHTML = `Joined ${dateData}` ;
     profileDescription.innerHTML = data.bio;
     repoNumber.innerHTML = data.public_repos;
     followersNumber.innerHTML = data.followers;
-    followingNumber.innerHTML = data.following;
+    followingNumber.innerHTML = data.following; 
     userLocation.innerHTML = data.location;
-    userBlog.innerHTML = data.blog;
+    userBlog.innerHTML = data.blog;         
     userCompany.innerHTML = data.company;
-    userTwitterUsername = data.twitter_username;
+    userTwitterUsername.innerHTML = data.twitter_username;
   }
   getUser();
 });

@@ -45,7 +45,14 @@ body {
   width: auto;
 }
 
-.input-group {
+input {
+  color: white;
+  padding-left: 1em;
+  font-size: 0.9rem;
+  font-family: "Space Mono", sans-serif;
+}
+
+.input__group {
   padding: 1em;
   display: flex;
   gap: 0.7em;
@@ -53,31 +60,35 @@ body {
   margin: 2em;
   background-color: #1e2a47;
 }
-.input-group__search {
+.input__group__search {
   padding: 0.2em;
   object-fit: contain;
 }
-.input-group__field::placeholder {
+.input__group__field::placeholder {
   color: white;
   font-size: 0.9rem;
   vertical-align: middle;
   opacity: 1;
   font-family: "Space Mono", sans-serif;
 }
-.input-group__field {
+.input__group__field {
   width: 100%;
   color: white;
 }
-.input-group__submit-btn {
+.input__group__submit-btn {
   background-color: #0079ff;
-  border-radius: 0.2em;
-  padding: 0.9em;
+  border-radius: 10px;
+  padding: 0.6em;
   color: white;
   font-family: "Space Mono", sans-serif;
 }
 
-input {
-  padding-left: 1em;
-  font-size: 0.9rem;
-  font-family: "Space Mono", sans-serif;
+.output-container {
+  background-color: #141d2f;
+  margin-inline-start: 2em;
+}
+
+.user_avatar {
+  width: auto;
+  height: 4em;
 }

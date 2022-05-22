@@ -1,3 +1,7 @@
+  $background-color: #141d2f;
+  $input-background:  #1e2a47;
+  $submit-btn-background: #0079ff;  
+
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +13,7 @@
 body {
   min-height: 100%;
   font-family: "Space Mono", sans-serif;
-  background-color: #141d2f;
+  background-color: $background-color;
   color: white;
 }
 
@@ -47,7 +51,14 @@ body {
   }
 }
 
-.input-group {
+input{
+  color: white;
+  padding-left: 1em;
+  font-size: .9rem;
+  font-family: 'Space Mono', sans-serif;
+}
+
+.input__group {
   padding: 1em;
   display: flex;
   gap: .7em;
@@ -75,15 +86,21 @@ body {
 
   &__submit-btn {
     background-color: #0079ff;
-    border-radius: 0.2em;
-    padding: 0.9em;
+    border-radius: 10px;
+    padding: 0.6em;
     color: white;
     font-family: "Space Mono", sans-serif;
   }
 }
 
-input{
-  padding-left: 1em;
-  font-size: .9rem;
-  font-family: 'Space Mono', sans-serif;
+// Output Container
+ 
+.output-container{
+  background-color: $background-color;
+  margin-inline-start: 2em;
+}
+
+.user_avatar{
+  width: auto;
+  height: 4em;
 }
