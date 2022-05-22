@@ -83,12 +83,23 @@ input {
   font-family: "Space Mono", sans-serif;
 }
 
-.output-container {
-  background-color: #141d2f;
-  margin-inline-start: 2em;
+.result {
+  display: flex;
+  gap: 1.5em;
+  flex-direction: row;
+  background-color: #1e2a47;
+  margin-inline: 2em;
+  padding: 2em;
+  border-radius: 0.7em;
 }
-
-.user_avatar {
+.result__user-avatar img {
   width: auto;
-  height: 4em;
+  height: 70px;
+}
+.result__user-avatar {
+  border: 2px solid currentColor;
+}
+.content {
+  display: flex;
+  flex-direction: column;
 }

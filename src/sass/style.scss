@@ -1,6 +1,6 @@
-  $background-color: #141d2f;
-  $input-background:  #1e2a47;
-  $submit-btn-background: #0079ff;  
+$background-color: #141d2f;
+$input-background: #1e2a47;
+$submit-btn-background: #0079ff;
 
 * {
   margin: 0;
@@ -51,17 +51,17 @@ body {
   }
 }
 
-input{
+input {
   color: white;
   padding-left: 1em;
-  font-size: .9rem;
-  font-family: 'Space Mono', sans-serif;
+  font-size: 0.9rem;
+  font-family: "Space Mono", sans-serif;
 }
 
 .input__group {
   padding: 1em;
   display: flex;
-  gap: .7em;
+  gap: 0.7em;
   border-radius: 0.7em;
   margin: 2em;
   background-color: #1e2a47;
@@ -94,13 +94,33 @@ input{
 }
 
 // Output Container
- 
-.output-container{
-  background-color: $background-color;
-  margin-inline-start: 2em;
+
+.result {
+  display: flex;
+  gap: 1.5em;
+  flex-direction: row;
+  background-color: $input-background;
+  margin-inline: 2em;
+  padding: 2em;
+  border-radius: 0.7em;
+
+  &__user-avatar img {
+    width: auto;
+    height: 70px;
+  }
+
+  &__user-avatar {
+    border: 2px solid currentColor;
+  }
+
+  &__person_name {
+  }
+
+  &__username {
+  }
 }
 
-.user_avatar{
-  width: auto;
-  height: 4em;
+.content {
+  display: flex;
+  flex-direction: column;
 }
