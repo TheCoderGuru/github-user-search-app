@@ -128,11 +128,6 @@ input {
   flex-direction: column;
 }
 
-// .flex {
-//   display: flex;
-//   flex-direction: column;
-// }
-
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -146,6 +141,5 @@ input {
 }
 
 .flex-icons {
-  display: flex;
-  flex-direction: column;
+  border: 2px solid currentColor;
 }
