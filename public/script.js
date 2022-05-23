@@ -33,16 +33,16 @@ btn.addEventListener("click", () => {
     const dateData = data.created_at.slice(0, data.created_at.length - 10);
 
     personName.innerHTML = data.name;
-    username.innerHTML = data.login;
+    username.innerHTML = `@${data.login}`;
     joinStatus.innerHTML = `Joined ${dateData}`;
-    // profileDescription.innerHTML = data.bio;
-    // repoNumber.innerHTML = data.public_repos;
-    // followersNumber.innerHTML = data.followers;
-    // followingNumber.innerHTML = data.following;
-    // userLocation.innerHTML = data.location;
-    // userBlog.innerHTML = data.blog;
-    // userCompany.innerHTML = data.company;
-    // userTwitterUsername.innerHTML = data.twitter_username;
+    profileDescription.innerHTML = data.bio;
+    repoNumber.innerHTML = data.public_repos;
+    followersNumber.innerHTML = data.followers;
+    followingNumber.innerHTML = data.following;
+    userLocation.innerHTML = data.location;
+    userBlog.innerHTML = data.blog;
+    userCompany.innerHTML = data.company;
+    userTwitterUsername.innerHTML = data.twitter_username;
   }
   getUser();
 });

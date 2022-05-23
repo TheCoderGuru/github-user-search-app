@@ -99,7 +99,16 @@ input {
 .result__user-avatar {
   border: 2px solid currentColor;
 }
+.result__username {
+  color: #0079ff;
+}
+
 .content {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex {
   display: flex;
   flex-direction: column;
 }
