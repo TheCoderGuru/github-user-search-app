@@ -113,11 +113,13 @@ input {
     border: 2px solid currentColor;
   }
 
-  &__person_name {
+  &__join_status {
+    margin-bottom: 4em;
   }
 
   &__username {
     color: #0079ff;
+    font-size: 1rem;
   }
 }
 
@@ -126,7 +128,24 @@ input {
   flex-direction: column;
 }
 
-.flex {
+// .flex {
+//   display: flex;
+//   flex-direction: column;
+// }
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.flex-row-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.flex-icons {
   display: flex;
   flex-direction: column;
 }

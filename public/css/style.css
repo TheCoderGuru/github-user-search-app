@@ -99,8 +99,12 @@ input {
 .result__user-avatar {
   border: 2px solid currentColor;
 }
+.result__join_status {
+  margin-bottom: 4em;
+}
 .result__username {
   color: #0079ff;
+  font-size: 1rem;
 }
 
 .content {
@@ -108,7 +112,19 @@ input {
   flex-direction: column;
 }
 
-.flex {
+.flex-row {
+  display: flex;
+  flex-direction: row;
+  gap: 2em;
+}
+
+.flex-row-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.flex-icons {
   display: flex;
   flex-direction: column;
 }
