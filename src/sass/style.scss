@@ -132,14 +132,22 @@ input {
   display: flex;
   flex-direction: row;
   gap: 2em;
+  margin-top: 3em;
 }
 
-.flex-row-icons {
+.flex-socialmedia {
+  display: flex;
+  margin-top: 3em;
+  gap: 1em;
+  flex-direction: column;
+}
+
+.rw {
   display: flex;
   flex-direction: row;
   gap: 1em;
 }
 
-.flex-icons {
-  border: 2px solid currentColor;
+.description {
+  margin-top: 1em;
 }
