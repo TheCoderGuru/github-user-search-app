@@ -10,6 +10,12 @@ $submit-btn-background: #0079ff;
   box-sizing: border-box;
 }
 
+.dark-mode{
+  $background-color: #F6F8FF;
+  $input-background: white;
+  
+}
+
 body {
   min-height: 100%;
   font-family: "Space Mono", sans-serif;

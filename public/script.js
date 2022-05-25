@@ -17,7 +17,7 @@ let userCompany = document.querySelector(".user_company");
 let userTwitterUsername = document.querySelector(".user_twitter");
 let img = document.createElement("img");
 let personAvatar = document.querySelector(".result__user-avatar");
-
+let lighttoggle = document.querySelector(".btn-flex__button");
 btn.addEventListener("click", () => {
   async function getUser() {
     let value = input.value;
@@ -46,3 +46,7 @@ btn.addEventListener("click", () => {
   }
   getUser();
 });
+
+lighttoggle.addEventListener('click', () => {
+  document.classList.add('.dark-mode');
+})
