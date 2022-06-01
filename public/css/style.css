@@ -45,6 +45,11 @@ body {
   width: auto;
 }
 
+.centered {
+  display: grid;
+  place-items: center;
+}
+
 input {
   color: white;
   padding-left: 1em;
@@ -56,6 +61,7 @@ input {
   padding: 1em;
   display: flex;
   gap: 0.7em;
+  width: 50em;
   border-radius: 0.7em;
   margin: 2em;
   background-color: #1e2a47;
@@ -89,11 +95,13 @@ input {
   flex-direction: row;
   background-color: #1e2a47;
   margin-inline: 2em;
+  width: 50em;
   padding: 2em;
   border-radius: 0.7em;
 }
 .result__user-avatar img {
   width: auto;
+  shape-outside: circle(50%);
   height: 70px;
 }
 .result__user-avatar {
@@ -115,7 +123,11 @@ input {
 .flex-row {
   display: flex;
   flex-direction: row;
-  gap: 2em;
+  gap: 5em;
+  background-color: #141D2F;
+  padding: 1em;
+  border-radius: 0.6em;
+  width: fit-content;
   margin-top: 3em;
 }
 
@@ -134,4 +146,29 @@ input {
 
 .description {
   margin-top: 1em;
+}
+
+@media screen and (max-width: 600px) {
+  .input__group__field {
+    width: 16em;
+  }
+
+  .input__group {
+    width: fit-content;
+  }
+
+  .flex-row {
+    gap: 1em;
+    width: fit-content;
+    margin-inline: 0;
+  }
+
+  .result {
+    flex-direction: column;
+    width: 24em;
+  }
+
+  .description {
+    width: 22em;
+  }
 }

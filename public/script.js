@@ -48,5 +48,5 @@ btn.addEventListener("click", () => {
 });
 
 lighttoggle.addEventListener('click', () => {
-  document.classList.add('.dark-mode');
+  document.body.classList.toggle('dark-mode');
 })
